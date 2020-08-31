@@ -18,7 +18,7 @@ const ArrowRight = ({ size = 19, color = "#FAFAFA", strokeWidth = "1.5" }) => (
 
 export { ArrowRight };
 
-const Eye = ({ size = 19, color = "#FAFAFA" }) => (
+const Eye = ({ size = 19, color = "#FAFAFA", strokeWidth = "1.5" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
@@ -26,7 +26,7 @@ const Eye = ({ size = 19, color = "#FAFAFA" }) => (
     viewBox="0 0 24 24"
     fill="none"
     stroke={color}
-    strokeWidth="4"
+    strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
   >
@@ -36,7 +36,11 @@ const Eye = ({ size = 19, color = "#FAFAFA" }) => (
 );
 export { Eye };
 
-const MessageSquare = ({ size = 19, color = "#FAFAFA" }) => (
+const MessageSquare = ({
+  size = 19,
+  color = "#FAFAFA",
+  strokeWidth = "1.5",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
@@ -44,7 +48,7 @@ const MessageSquare = ({ size = 19, color = "#FAFAFA" }) => (
     viewBox="0 0 24 24"
     fill="none"
     stroke={color}
-    strokeWidth="4"
+    strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
   >
@@ -53,7 +57,7 @@ const MessageSquare = ({ size = 19, color = "#FAFAFA" }) => (
 );
 export { MessageSquare };
 
-const ThumbsUp = ({ size = 19, color = "#FAFAFA" }) => (
+const ThumbsUp = ({ size = 19, color = "#FAFAFA", strokeWidth = "1.5" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
@@ -61,7 +65,7 @@ const ThumbsUp = ({ size = 19, color = "#FAFAFA" }) => (
     viewBox="0 0 24 24"
     fill="none"
     stroke={color}
-    strokeWidth="4"
+    strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
   >

@@ -1,3 +1,7 @@
+div {
+  font-family: "Muli";
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -11,6 +15,13 @@
   justify-content: center;
   height: 100vh;
 }
+.box {
+  height: 70%;
+  width: 70%;
+}
+.content {
+  margin: 5px;
+}
 
 .card > div {
   background-color: #ffffff;
@@ -20,7 +31,7 @@
   height: 550px;
 }
 
-.card button {
+button {
   background-color: #ffcf54;
   border: none;
   border-radius: 29px;
@@ -28,13 +39,69 @@
   font-size: 16px;
   font-weight: bold;
   height: 58px;
-  font-family: "Muli";
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-div {
-  margin: 2px;
-  padding: 2px;
+button:hover {
+  border: 2px solid #ffcf54;
+  background-color: #ffffff;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.space-around {
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 5px 0px;
+  padding: 0px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px 0px;
+  padding: 0px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 4px;
+}
+
+.b {
+  border: 2px solid red;
 }
