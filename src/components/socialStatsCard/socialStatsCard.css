@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card > div {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 32px 20px rgba(4, 22, 87, 0.09);
+  width: 410px;
+  height: 550px;
+}
+
+.card button {
+  background-color: #ffcf54;
+  border: none;
+  border-radius: 29px;
+  width: 242px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 58px;
+  font-family: "Muli";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  margin: 2px;
+  padding: 2px;
+}
