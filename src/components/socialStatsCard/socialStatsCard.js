@@ -1,6 +1,9 @@
 import React from "react";
 import "./socialStatsCard.css";
-import { ArrowRight, MessageSquare, ThumbsUp, Eye } from "../../images/icons";
+import ArrowRight from "../../images/icons/arrowRight";
+import Eye from "../../images/icons/eye";
+import MessageSquare from "../../images/icons/messageSquare";
+import ThumbsUp from "../../images/icons/thumbsUp";
 
 class SocialStatsCard extends React.Component {
   constructor(props) {
