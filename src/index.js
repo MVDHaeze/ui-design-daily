@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import SocialStatsCard from "./components/socialStatsCard";
+import FeedbackBox from "./components/feedbackBox";
 
 ReactDOM.render(
   <React.StrictMode>
-    <SocialStatsCard />
+    <FeedbackBox />
   </React.StrictMode>,
   document.getElementById("root")
 );
