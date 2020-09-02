@@ -1,6 +1,6 @@
 import React from "react";
-import "./socialStatsCard.css";
-import ArrowRight from "../../images/icons/arrowRight";
+import "./style.css";
+import ArrowRight from "../../images/icons/arrowRight/arrowRight";
 import Eye from "../../images/icons/eye";
 import MessageSquare from "../../images/icons/messageSquare";
 import ThumbsUp from "../../images/icons/thumbsUp";

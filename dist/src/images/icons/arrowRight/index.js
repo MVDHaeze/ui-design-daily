@@ -40,4 +40,4 @@ var ArrowRight = function ArrowRight(_ref) {
 var _default = ArrowRight;
 exports.default = _default;
 
-//# sourceMappingURL=arrowRight.js.map
+//# sourceMappingURL=index.js.map
