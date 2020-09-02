@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import SocialStatsCard from "./components/socialStatsCard/socialStatsCard";
+import SocialStatsCard from "./components/socialStatsCard";
 
 ReactDOM.render(
   <React.StrictMode>

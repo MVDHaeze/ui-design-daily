@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import ArrowRight from "../../images/icons/arrowRight/arrowRight";
+import ArrowRight from "../../images/icons/arrowRight";
 import Eye from "../../images/icons/eye";
 import MessageSquare from "../../images/icons/messageSquare";
 import ThumbsUp from "../../images/icons/thumbsUp";
