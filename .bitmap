@@ -61,5 +61,35 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "mvdhaeze.ui-design-daily/faces@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/images/pictures/faces.js",
+                "test": false,
+                "name": "faces.js"
+            }
+        ],
+        "mainFile": "src/images/pictures/faces.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "mvdhaeze.ui-design-daily/feedback-box@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/components/feedbackBox/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/feedbackBox/style.css",
+                "test": false,
+                "name": "style.css"
+            }
+        ],
+        "mainFile": "src/components/feedbackBox/index.js",
+        "trackDir": "src/components/feedbackBox",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "version": "14.8.8"
 }

@@ -13,14 +13,12 @@ div {
 .ahc {
   align-content: center;
 }
-
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
 }
-
 .left-aligned {
   display: flex;
   align-self: flex-end;
@@ -34,8 +32,8 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
-
 .box {
   height: 85%;
   width: 85%;
