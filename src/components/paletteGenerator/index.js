@@ -7,8 +7,10 @@ class PaletteGenerator extends React.Component {
     this.state = {
       color: [["#222831"], ["#393E46"], ["#00ADB5"], ["#EEEEEE"], ["#E82D17"]],
       showPopUp: false,
+      colorPicked: "",
     };
     this.generateColor = this.generateColor.bind(this);
+    this.showPopUp = this.showPopUp.bind(this);
   }
 
   generateColor() {
@@ -54,28 +56,38 @@ class PaletteGenerator extends React.Component {
       if (e.keyCode === 32) {
         this.generateColor();
       } else if (e.keyCode === 67) {
-        this.setState({ showPopUp: true });
-        setTimeout(() => {
-          this.setState({ showPopUp: false });
-        }, 1500);
       }
     });
+  }
+
+  showPopUp() {
+    this.setState({ showPopUp: true });
+    setTimeout(() => {
+      this.setState({ showPopUp: false });
+    }, 1500);
+  }
+
+  handleColor(selection) {
+    this.setState({ colorPicked: selection });
   }
 
   render() {
     return (
       <div className="col container space-evenly vh-100 b">
-        {this.state.showPopUp && (
-          <button className="pop-up">
-            Color #XXX copied to your clipboard{" "}
-          </button>
-        )}
+        {this.state.showPopUp && <PopUp colorCopied={this.state.colorPicked} />}
         <div>
           <h2 className="mt-30"> Color palette generator </h2>
         </div>
         <div className="row">
           {this.state.color.map((key) => (
-            <div className="card col space-between" id="card">
+            <div
+              className="card col space-between"
+              id={key}
+              onClick={() => {
+                this.showPopUp();
+                this.handleColor(`${key}`);
+              }}
+            >
               <div
                 className="color-container"
                 style={{ backgroundColor: `${key}` }}
@@ -101,3 +113,13 @@ class PaletteGenerator extends React.Component {
 }
 
 export default PaletteGenerator;
+
+class PopUp extends React.Component {
+  render() {
+    return (
+      <button className="pop-up">
+        Color {this.props.colorCopied} copied to your clipboard{" "}
+      </button>
+    );
+  }
+}
