@@ -5,12 +5,19 @@ class PaletteGenerator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: [["#222831"], ["#393E46"], ["#00ADB5"], ["#EEEEEE"], ["#E82D17"]],
+      palette: [
+        ["#222831"],
+        ["#393E46"],
+        ["#00ADB5"],
+        ["#EEEEEE"],
+        ["#E82D17"],
+      ],
       showPopUp: false,
       colorPicked: "",
     };
     this.generateColor = this.generateColor.bind(this);
     this.showPopUp = this.showPopUp.bind(this);
+    this.handleCopy = this.handleCopy.bind(this);
   }
 
   generateColor() {
@@ -28,7 +35,7 @@ class PaletteGenerator extends React.Component {
         let paletteHEX = paletteRGB.map((key) =>
           this.fullColorHex(key[0], key[1], key[2])
         );
-        this.setState({ color: paletteHEX });
+        this.setState({ palette: paletteHEX });
       }
     };
 
@@ -56,6 +63,12 @@ class PaletteGenerator extends React.Component {
       if (e.keyCode === 32) {
         this.generateColor();
       } else if (e.keyCode === 67) {
+        navigator.clipboard.writeText(this.state.palette);
+        this.setState({ colorPicked: "palette" });
+        this.setState({ showPopUp: true });
+        setTimeout(() => {
+          this.setState({ showPopUp: false });
+        }, 1500);
       }
     });
   }
@@ -71,6 +84,10 @@ class PaletteGenerator extends React.Component {
     this.setState({ colorPicked: selection });
   }
 
+  handleCopy(color) {
+    navigator.clipboard.writeText(color);
+  }
+
   render() {
     return (
       <div className="col container space-evenly vh-100 b">
@@ -79,13 +96,14 @@ class PaletteGenerator extends React.Component {
           <h2 className="mt-30"> Color palette generator </h2>
         </div>
         <div className="row">
-          {this.state.color.map((key) => (
+          {this.state.palette.map((key) => (
             <div
               className="card col space-between"
               id={key}
               onClick={() => {
                 this.showPopUp();
                 this.handleColor(`${key}`);
+                this.handleCopy(`${key}`);
               }}
             >
               <div
