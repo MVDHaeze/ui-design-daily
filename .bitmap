@@ -73,7 +73,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "mvdhaeze.ui-design-daily/feedback-box@1.0.0": {
+    "mvdhaeze.ui-design-daily/feedback-box@1.0.1": {
         "files": [
             {
                 "relativePath": "src/components/feedbackBox/index.js",

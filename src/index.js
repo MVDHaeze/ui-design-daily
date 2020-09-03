@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import FeedbackBox from "./components/feedbackBox";
+import PaletteGenerator from "./components/paletteGenerator";
 
 ReactDOM.render(
   <React.StrictMode>
-    <FeedbackBox />
+    <PaletteGenerator />
   </React.StrictMode>,
   document.getElementById("root")
 );
