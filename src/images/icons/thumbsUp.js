@@ -1,6 +1,6 @@
 import React from "react";
 
-const ThumbsUp = ({ size = 19, color = "#FAFAFA", strokeWidth = "1.5" }) => (
+const ThumbsUp = ({ size = 24, color = "#000", strokeWidth = "1.5" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}

@@ -9,13 +9,19 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function ArrowRight() {
-  var size = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 19;
-  var color = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "#FAFAFA";
-  var strokeWidth = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "1.5";
-  var fill = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : "none";
-  var strokeLinecap = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : "round";
-  var strokeLinejoin = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : "round";
+var ArrowRight = function ArrowRight(_ref) {
+  var _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size,
+      _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#000" : _ref$color,
+      _ref$strokeWidth = _ref.strokeWidth,
+      strokeWidth = _ref$strokeWidth === void 0 ? "1.5" : _ref$strokeWidth,
+      _ref$fill = _ref.fill,
+      fill = _ref$fill === void 0 ? "none" : _ref$fill,
+      _ref$strokeLinecap = _ref.strokeLinecap,
+      strokeLinecap = _ref$strokeLinecap === void 0 ? "round" : _ref$strokeLinecap,
+      _ref$strokeLinejoin = _ref.strokeLinejoin,
+      strokeLinejoin = _ref$strokeLinejoin === void 0 ? "round" : _ref$strokeLinejoin;
   return /*#__PURE__*/_react.default.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: size,
@@ -29,7 +35,7 @@ function ArrowRight() {
   }, /*#__PURE__*/_react.default.createElement("path", {
     d: "M5 12h13M12 5l7 7-7 7"
   }));
-}
+};
 
 var _default = ArrowRight;
 exports.default = _default;

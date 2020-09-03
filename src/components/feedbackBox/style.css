@@ -86,18 +86,29 @@ div {
   color: #545e7f;
 }
 
-.face-box {
+.face-box-inactive {
   background-color: #ffffff;
   border-radius: 10px;
 
   padding: 12px;
 }
 
-.face-box:hover {
+.face-box-inactive:hover {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(52, 87, 220, 0.4);
   padding: 12px;
+}
+
+.face-box-active {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(52, 87, 220, 0.4);
+  padding: 12px;
+}
+
+button:focus {
+  outline: none;
 }
 
 .row {

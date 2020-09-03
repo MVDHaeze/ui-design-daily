@@ -13,5 +13,53 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "mvdhaeze.icon-svg/closing-x@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/images/icons/closingX.js",
+                "test": false,
+                "name": "closingX.js"
+            }
+        ],
+        "mainFile": "src/images/icons/closingX.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "mvdhaeze.icon-svg/eye@1.0.1": {
+        "files": [
+            {
+                "relativePath": "src/images/icons/eye.js",
+                "test": false,
+                "name": "eye.js"
+            }
+        ],
+        "mainFile": "src/images/icons/eye.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "mvdhaeze.icon-svg/message-square@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/images/icons/messageSquare.js",
+                "test": false,
+                "name": "messageSquare.js"
+            }
+        ],
+        "mainFile": "src/images/icons/messageSquare.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "mvdhaeze.icon-svg/thumbs-up@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/images/icons/thumbsUp.js",
+                "test": false,
+                "name": "thumbsUp.js"
+            }
+        ],
+        "mainFile": "src/images/icons/thumbsUp.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "version": "14.8.8"
 }

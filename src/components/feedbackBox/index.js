@@ -1,18 +1,40 @@
 import React from "react";
 import "./style.css";
-import HappyFace from "../../images/pictures/happyFace";
-import SadFace from "../../images/pictures/sadFace";
-import ThinkingFace from "../../images/pictures/thinkingFace";
-import ClosingX from "../../images/icons/closingX";
+import { HappyFace, SadFace, ThinkingFace } from "../../images/pictures/faces";
+import ClosingX from "@bit/mvdhaeze.icon-svg.closing-x";
 
 class FeedbackBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      feedbackLevel: "",
+      feedbackSatisfaction: "",
       feedbackComment: "",
     };
+    this.handleComment = this.handleComment.bind(this);
+    this.handleSatisfaction = this.handleSatisfaction.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+  handleComment(event) {
+    this.setState({ feedbackComment: event.target.value });
+  }
+
+  handleSatisfaction(event) {
+    this.setState({
+      feedbackSatisfaction: event.currentTarget.getAttribute(
+        "data-satisfaction"
+      ),
+    });
+  }
+
+  handleSubmit() {
+    // Should normaly log the information in DB on submit
+  }
+
+  handleSkip() {
+    // Should normaly close the pop up
+  }
+
   render() {
     return (
       <div className="card" id="card">
@@ -29,15 +51,39 @@ class FeedbackBox extends React.Component {
               </div>
             </div>
             <div id="views-container" className="col stats-container">
-              <h2>{this.state.postViews}</h2>
               <div className="row space-around">
-                <div className="face-box">
+                {/* not very efficient --> rewrite with .map */}
+                <div
+                  className={
+                    "low" === this.state.feedbackSatisfaction
+                      ? "face-box-active"
+                      : "face-box-inactive"
+                  }
+                  onClick={this.handleSatisfaction}
+                  data-satisfaction="low"
+                >
                   <SadFace />
                 </div>
-                <div className="face-box">
+                <div
+                  className={
+                    "medium" === this.state.feedbackSatisfaction
+                      ? "face-box-active"
+                      : "face-box-inactive"
+                  }
+                  onClick={this.handleSatisfaction}
+                  data-satisfaction="medium"
+                >
                   <ThinkingFace />
                 </div>
-                <div className="face-box">
+                <div
+                  className={
+                    "high" === this.state.feedbackSatisfaction
+                      ? "face-box-active"
+                      : "face-box-inactive"
+                  }
+                  onClick={this.handleSatisfaction}
+                  data-satisfaction="high"
+                >
                   <HappyFace />
                 </div>
               </div>
@@ -46,9 +92,14 @@ class FeedbackBox extends React.Component {
               <label for="feedbackForm">
                 <h5 className="darkblue">Tell us how we can improve</h5>
               </label>
-              <textarea id="feedbackForm" name="feedbackForm" rows="3">
-                Write your message here
-              </textarea>
+              <textarea
+                id="feedbackForm"
+                name="feedbackForm"
+                rows="3"
+                placeholder="Write your message here"
+                onChange={this.handleComment}
+                value={this.state.feedbackComment}
+              ></textarea>
             </div>
             <div className="row space-around">
               <button className="secondary-button">

@@ -1,8 +1,8 @@
 import React from "react";
 
 const ArrowRight = ({
-  size = 19,
-  color = "#FAFAFA",
+  size = 24,
+  color = "#000",
   strokeWidth = "1.5",
   fill = "none",
   strokeLinecap = "round",

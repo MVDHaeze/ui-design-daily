@@ -11,9 +11,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var MessageSquare = function MessageSquare(_ref) {
   var _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 19 : _ref$size,
+      size = _ref$size === void 0 ? 24 : _ref$size,
       _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#FAFAFA" : _ref$color,
+      color = _ref$color === void 0 ? "#000" : _ref$color,
       _ref$strokeWidth = _ref.strokeWidth,
       strokeWidth = _ref$strokeWidth === void 0 ? "1.5" : _ref$strokeWidth;
   return /*#__PURE__*/_react.default.createElement("svg", {

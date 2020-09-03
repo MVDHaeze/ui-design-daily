@@ -1,6 +1,6 @@
 import React from "react";
 
-const ClosingX = ({ size = 19, color = "#FAFAFA", strokeWidth = "4" }) => (
+const ClosingX = ({ size = 24, color = "#000", strokeWidth = "4" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
