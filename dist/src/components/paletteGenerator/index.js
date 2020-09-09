@@ -161,7 +161,7 @@ var PaletteGenerator = /*#__PURE__*/function (_React$Component) {
       var _this5 = this;
 
       return /*#__PURE__*/_react.default.createElement("div", {
-        className: "col container space-evenly vh-100 b"
+        className: "col container space-evenly vh-100"
       }, this.state.showPopUp && /*#__PURE__*/_react.default.createElement(PopUp, {
         colorCopied: this.state.colorPicked
       }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h2", {

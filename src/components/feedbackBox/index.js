@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { HappyFace, SadFace, ThinkingFace } from "../../images/pictures/faces";
-import ClosingX from "@bit/mvdhaeze.icon-svg.closing-x";
+import ClosingX from "../../images/icons/closingX";
 
 class FeedbackBox extends React.Component {
   constructor(props) {
@@ -9,6 +9,7 @@ class FeedbackBox extends React.Component {
     this.state = {
       feedbackSatisfaction: "",
       feedbackComment: "",
+      userName: "",
     };
     this.handleComment = this.handleComment.bind(this);
     this.handleSatisfaction = this.handleSatisfaction.bind(this);
@@ -46,7 +47,7 @@ class FeedbackBox extends React.Component {
             <div className="col text-centered centered">
               <div className="title row text-centered w-80 centered">
                 <h4 className="darkblue">
-                  How likely are you to answer to this question?
+                  Hey {this.state.userName}! How likely are you to answer to this question?
                 </h4>
               </div>
             </div>

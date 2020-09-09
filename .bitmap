@@ -91,7 +91,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "mvdhaeze.ui-design-daily/palette-generator@1.0.0": {
+    "mvdhaeze.ui-design-daily/palette-generator@1.0.1": {
         "files": [
             {
                 "relativePath": "src/components/paletteGenerator/index.js",

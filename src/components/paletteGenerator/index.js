@@ -90,7 +90,7 @@ class PaletteGenerator extends React.Component {
 
   render() {
     return (
-      <div className="col container space-evenly vh-100 b">
+      <div className="col container space-evenly vh-100">
         {this.state.showPopUp && <PopUp colorCopied={this.state.colorPicked} />}
         <div>
           <h2 className="mt-30"> Color palette generator </h2>
